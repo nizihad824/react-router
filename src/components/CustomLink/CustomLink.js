@@ -10,14 +10,14 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom';
         return (
             <div>
                 <Link
-                    style={{ textDecoration: match ? "underline" : "none" }}
+                    style={{ color: match ?'red':'black', textDecoration: match ?  "underline" : "none" }}
                     to={to}
                     {...props}
                 >
                     {children}
 
                 </Link>
-                {match && " (active)"}
+                
 
             </div>
         );
